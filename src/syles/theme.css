@@ -1,0 +1,156 @@
+:root {
+  --height-nav: 3rem;
+  --screen-height: 100vh;
+  --screen-height-dynamic: 100vh;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion:reduce) {
+  html {
+    -webkit-animation: none !important;
+    animation: none !important;
+    scroll-behavior: auto;
+    transition: none !important;
+  }
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #fff;
+  color: #53585f;
+  font: 400 14px/20px proxima-nova, Arial, sans-serif;
+  letter-spacing: .3px;
+  margin: 0;
+}
+
+@media only screen and (min-width:768px) {
+  body {
+    font: 400 16px/22px proxima-nova, Arial, sans-serif;
+  }
+}
+
+.active {
+  color: #000 !important;
+}
+
+.visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.visibility-hidden {
+  display: none !important;
+}
+
+.js-focus-hidden {
+  outline: none
+}
+
+@media only screen and (max-width:1099px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-text-decoration-skip: objects;
+  text-decoration-skip: objects;
+}
+
+svg:not(:root) {
+  overflow: hidden
+}
+
+svg:not([fill]) {
+  fill: currentColor;
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: visible;
+}
+
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted;
+}
+
+select:active,
+select:focus {
+  outline: none !important;
+  border: none !important;
+  -webkit-appearance: none;
+
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  text-transform: none;
+}
+
+input[type=number],
+input[type=text],
+textarea {
+  --tw-ring-shadow: 0 0 transparent !important
+}
+
+input {
+  --tw-ring-shadow: 0 0 transparent !important;
+}
+
+.js-focus-hidden {
+  outline: none;
+}
